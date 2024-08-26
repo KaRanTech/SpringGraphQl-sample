@@ -1,0 +1,17 @@
+type Product{
+id:ID,
+name:String
+description:String
+price:Float
+quantity:Int
+domain:String
+}
+
+type Query{
+getAllProducts:[Product]
+    getByDomain(domain:String):[Product]
+}
+
+type Mutation{
+    updateQuantity(id:ID,quantity:Int):Product
+}

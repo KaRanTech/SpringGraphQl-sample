@@ -5,6 +5,7 @@ description:String
 price:Float
 quantity:Int
 domain:String
+    #subscription:[Subscription]
 }
 
 type Query{
@@ -15,3 +16,4 @@ getAllProducts:[Product]
 type Mutation{
     updateQuantity(id:ID,quantity:Int):Product
 }
+

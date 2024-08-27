@@ -1,12 +1,11 @@
 package com.karan.SpringGraphQl_sample.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -21,6 +20,8 @@ public class Product {
     private Float price;
     private int quantity;
     private String domain;
+    //@OneToMany(cascade = CascadeType.ALL)
+   //private List<Subscription> subscription;
 
 
 
